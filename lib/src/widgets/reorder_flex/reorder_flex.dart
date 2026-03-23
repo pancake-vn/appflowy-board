@@ -202,7 +202,7 @@ class ReorderFlexState extends State<ReorderFlex>
         ScrollController();
 
     if (_scrollController.hasClients) {
-      _attachedScrollPosition = Scrollable.of(context)?.position;
+      _attachedScrollPosition = Scrollable.maybeOf(context)?.position;
     } else {
       _attachedScrollPosition = null;
     }
